@@ -1,0 +1,1 @@
+Remark boilerplate with Beamer style.

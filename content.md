@@ -1,28 +1,67 @@
-class: center, middle, no-number
+class: center, middle, no-number, titlepage
 count: false
 
-# A Long Long Title
+# A Long Long Long Title
 
-.subtitle[Subtitle]
+## Subtitle (optional)
 
-.author[Author]
+Author
 
 .date[Date]
 
 ---
 
-## Introduction
+# Conventions
 
-### Examples
+## Titlepage Setting
 
-Some examples of commonly used commands and features are included, to help you get started.
+```
+class: center, middle, no-number, titlepage
+count: false
 
-- Your introduction goes here!
-- Use `itemize` to organize your main points
+# Your title
+
+## Subtitle (optional)
+
+Author
+
+.date[Date]
+```
 
 ---
 
-## Text alignment
+# Conventions
+
+## Math
+
+```
+.math[c = \\pm\\sqrt{a^2 + b^2}]
+```
+
+.math[c = \\pm\\sqrt{a^2 + b^2}]
+
+## Reference
+
+See `content.md` (link only works when printed to PDF)
+
+\cite{id}
+
+---
+
+# Default Syntax
+
+## Text
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+## List
+
+- Lorem ipsum dolor sit amet
+- Consectetur adipiscing elit
+
+---
+
+# Text alignment
 
 .left[Left-aligned text]
 
@@ -32,9 +71,16 @@ Some examples of commonly used commands and features are included, to help you g
 
 ---
 
-## Incremental Slides
+# Incremental Slides
 
 - bullet 1
+
 --
 
 - bullet 2
+
+---
+
+# References
+
+@{id}{author}{title}{publisher}{year}

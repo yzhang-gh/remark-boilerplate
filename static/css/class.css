@@ -1,0 +1,23 @@
+.titlepage h1 {
+    font-size: 1.5em;
+    margin-bottom: 3rem;
+}
+
+.titlepage h2 {
+    font-size: 1.25em;
+    margin-top: -2.5rem;
+    margin-bottom: 3rem;
+}
+
+.titlepage .date {
+    font-size: 16px;
+}
+
+p.ref-item {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+.katex {
+    font-size: 1em;
+}

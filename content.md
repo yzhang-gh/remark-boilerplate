@@ -81,6 +81,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ---
 
+class: no-number
+count: false
+
 # References
 
 @{id}{author}{title}{publisher}{year}

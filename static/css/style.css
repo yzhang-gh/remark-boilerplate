@@ -4,7 +4,8 @@ body {
 }
 
 p,
-ul {
+ul,
+table {
     margin-top: 0;
     margin-bottom: 1rem;
 }
@@ -25,6 +26,26 @@ a {
 img {
     max-height: 350px;
     /* TODO: */
+}
+
+table {
+    border-collapse: collapse;
+    border-top: 2px solid var(--color-default);
+    border-bottom: 2px solid var(--color-default);
+}
+
+table thead {
+    border-bottom: 1px solid var(--color-default);
+}
+
+table th,
+table td {
+    padding: 0 .5em .1em .5em;
+}
+
+table thead tr:nth-child(1) th,
+table tbody tr:nth-child(1) td {
+    padding-top: .1em;
 }
 
 .remark-slide-content h1 {

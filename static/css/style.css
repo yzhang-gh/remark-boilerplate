@@ -4,8 +4,7 @@ body {
 }
 
 p,
-ul,
-table {
+ul {
     margin-top: 0;
     margin-bottom: 1rem;
 }
@@ -28,10 +27,12 @@ img {
     /* TODO: */
 }
 
-table {
+.remark-slide-content>table:not(:first-child) {
     border-collapse: collapse;
     border-top: 2px solid var(--color-default);
     border-bottom: 2px solid var(--color-default);
+    margin: 0 auto;
+    margin-bottom: 1rem;
 }
 
 table thead {

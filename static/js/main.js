@@ -60,7 +60,7 @@ function renderReference(source) {
     source = source.replace(/\\cite{(.*?)}/g, (_, p1) => {
         items = refList.filter(item => item.id == p1);
         if (items.length !== 0) {
-            return `([${renderAuthor(items[0].author)}, ${items[0].year}](#${items[0].id}))`;
+            return `[${renderAuthor(items[0].author)}, ${items[0].year}](#${items[0].id})`;
         } else {
             return '<span style="color: red;">(Error parsing \\cite)</span>';
         }

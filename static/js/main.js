@@ -60,7 +60,8 @@ function renderReference(source) {
     source = source.replace(/\\cite{(.*?)}/g, (_, p1) => {
         items = refList.filter(item => item.id == p1);
         if (items.length !== 0) {
-            return `[${renderAuthor(items[0].author)}, ${items[0].year}](#${items[0].id})`;
+            // return `[${renderAuthor(items[0].author)}, ${items[0].year}](#${items[0].id})`;
+            return `<span class="cite-item"><a href="#${items[0].id}">${renderAuthor(items[0].author)}, ${items[0].year}</a></span>`;
         } else {
             return '<span style="color: red;">(Error parsing \\cite)</span>';
         }
@@ -68,7 +69,7 @@ function renderReference(source) {
 
     /* Render bibliography */
     refList.forEach(item => {
-        source = source.replace(item.line, `<p id="${item.id}" class="ref-item">${item.author}. ${item.title}. <em>${item.publisher}</em>. ${item.year}.</p>`);
+        source = source.replace(item.line, `<p id="${item.id}" class="ref-item">${item.author}. <span style="border-bottom: 1px solid var(--color-default);">${item.title}</span>. <em>${item.publisher}</em>. ${item.year}.</p>`);
     });
 
     return source;

@@ -78,14 +78,17 @@ function renderReference(source) {
 loadFromUrl('content.md', source => {
     source = renderReference(source);
     document.getElementById('source').innerHTML = source;
-    var slideshow = remark.create();
+    let slideshow = remark.create();
 });
 
 /* Render math */
 setTimeout(function () {
     mathDoms = document.getElementsByClassName('math');
-    for (var i = 0; i < mathDoms.length; i++) {
-        var element = mathDoms[i];
-        katex.render(element.innerHTML, element);
+    for (let i = 0; i < mathDoms.length; i++) {
+        let element = mathDoms[i];
+        let math = element.innerHTML;
+        // 💩: Handle wrongly parsed `_`
+        math = math.replace(/<\/?em>/g, '_');
+        katex.render(math, element);
     }
 }, 500);

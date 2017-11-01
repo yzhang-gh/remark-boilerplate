@@ -11,7 +11,7 @@ p,
 ul,
 ol {
     margin-top: 0;
-    margin-bottom: .6rem;
+    margin-bottom: .6em;
 }
 
 h1,
@@ -49,8 +49,8 @@ table td {
     padding: 0 .5em .1em .5em;
 }
 
-table thead tr:nth-child(1) th,
-table tbody tr:nth-child(1) td {
+table thead tr:first-child th,
+table tbody tr:first-child td {
     padding-top: .1em;
 }
 
@@ -63,9 +63,8 @@ table tbody tr:nth-child(1) td {
     font-size: 1em;
 }
 
-.remark-slide-content>h1,
-.remark-slide-content>h2, {
-    margin-bottom: 1rem;
+.remark-slide-content>h1 {
+    margin-bottom: .6rem;
 }
 
 pre {

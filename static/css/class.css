@@ -13,6 +13,16 @@
     font-size: 16px;
 }
 
+.remark-slide-content.subtitle>h1:first-child +p {
+    margin-top: -0.9em;
+    margin-left: 1px;
+}
+
+span.subtitle {
+    color: var(--color-accent);
+    font-size: .8em;
+}
+
 p.ref-item {
     padding-left: 1em;
     text-indent: -1em;
@@ -31,4 +41,28 @@ p.ref-item {
 
 .katex {
     font-size: 1em;
+}
+
+.col-4>* {
+    width: 33.33%;
+}
+
+.col-5>* {
+    width: 41.67%;
+}
+
+.col-6>* {
+    width: 50%;
+}
+
+.col-7>* {
+    width: 58.33%;
+}
+
+.col-8>* {
+    width: 66.67%;
+}
+
+.alert {
+    color: var(--color-alert);
 }

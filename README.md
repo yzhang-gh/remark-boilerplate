@@ -10,4 +10,14 @@ Remark template with Beamer style.
 
 `.math[]`
 
+### Underscore
+
 Sometimes `_` (subscript in LaTeX) will be wrongly parsed as `_italic_` block, just wrap your equation with `<p>` or `<div>`
+
+### Multi-line Equation
+
+KaTeX supports `aligned` environment
+
+## Tips
+
+Use vscode decoration to highlight slide separator `---`

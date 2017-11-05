@@ -90,6 +90,12 @@ setTimeout(function () {
         // Ideally, this is not necessary as we wrap math equation with `<p>` when `_` is obscure.
         // In fact, it depends on the renderer engine
         math = math.replace(/<\/?em>/g, '_');
-        katex.render(math, element);
+        // `&` in `<p>` will be escaped
+        math = math.replace(/&amp;/g, '&');
+        if ((element.className + element.parentNode.className).indexOf('block') !== -1) {
+            katex.render(math, element, { displayMode: true });
+        } else {
+            katex.render(math, element);
+        }
     }
 }, 500);

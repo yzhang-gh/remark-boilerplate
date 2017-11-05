@@ -41,6 +41,7 @@ p.ref-item {
 
 .katex {
     font-size: 1em;
+    color: #0c7f99;
 }
 
 .col-4>* {
@@ -75,8 +76,18 @@ p.ref-item {
     opacity: .6;
 }
 
+.opacity06,
+.opacity06 * {
+    color: var(--color-default);
+    border-color: var(--color-default);
+}
+
 .divider {
     border-top: 1px solid rgba(34,36,38,.3);
     display: block;
     margin: 1rem 0;
+}
+
+.remark-slide-content.no-change {
+    opacity: .5;
 }

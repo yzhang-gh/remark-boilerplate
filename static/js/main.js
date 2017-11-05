@@ -87,7 +87,8 @@ setTimeout(function () {
     for (let i = 0; i < mathDoms.length; i++) {
         let element = mathDoms[i];
         let math = element.innerHTML;
-        // 💩: Handle wrongly parsed `_`
+        // Ideally, this is not necessary as we wrap math equation with `<p>` when `_` is obscure.
+        // In fact, it depends on the renderer engine
         math = math.replace(/<\/?em>/g, '_');
         katex.render(math, element);
     }

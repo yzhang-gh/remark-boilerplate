@@ -13,7 +13,7 @@
     font-size: 16px;
 }
 
-.remark-slide-content.subtitle>h1:first-child +p {
+.remark-slide-content.subtitle>h1:first-child+p {
     margin-top: -0.9em;
     margin-left: 1px;
 }
@@ -104,11 +104,8 @@ p.ref-item {
     color: #77AC30;
 }
 
-.D95319 {
-    color: #D95319;
-}
-
-.ul { /* underline */
+.ul {
+    /* underline */
     border-bottom: 1px solid var(--color-default);
 }
 
@@ -123,7 +120,7 @@ p.ref-item {
 }
 
 .divider {
-    border-top: 1px solid rgba(34,36,38,.3);
+    border-top: 1px solid rgba(34, 36, 38, .3);
     display: block;
     margin: 1rem 0;
 }
@@ -145,6 +142,9 @@ p.ref-item {
     font-size: .7em;
 }
 
+
+/* Need a good class name */
+
 .dl {
     border-radius: 3px;
     background: #eeeeee;
@@ -156,6 +156,9 @@ p.ref-item {
 .dl>h2 {
     padding: 0 3px;
 }
+
+
+/* Not good */
 
 .margin-bottom-0,
 .margin-bottom-0>p {

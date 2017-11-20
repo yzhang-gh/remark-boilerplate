@@ -33,9 +33,11 @@ function abbrAuthor(author) {
 }
 
 function renderAuthor(author) {
-    authors = author.replace('and', '').trim().split(',');
+    authors = author.replace('and', ',').trim().split(',');
     if (authors.length === 1) {
         return abbrAuthor(author);
+    } else if (authors.length === 2) {
+        return abbrAuthor(authors[0]) + ' & ' + abbrAuthor(authors[1]);
     } else {
         return abbrAuthor(authors[0]) + ' et al.';
     }

@@ -26,6 +26,7 @@ span.subtitle {
 p.ref-item {
     padding-left: 1em;
     text-indent: -1em;
+    font-size: .8em;
 }
 
 .cite-item a {
@@ -42,6 +43,25 @@ p.ref-item {
 .katex {
     font-size: 1em;
     color: #0c7f99;
+}
+
+.col-1-empty {
+    display: inline-block;
+    width: 8.33%;
+}
+
+.col-2-empty {
+    display: inline-block;
+    width: 16.67%;
+}
+
+.col-3-empty {
+    display: inline-block;
+    width: 25%;
+}
+
+.col-3>* {
+    width: 25%;
 }
 
 .col-4>* {
@@ -64,8 +84,28 @@ p.ref-item {
     width: 66.67%;
 }
 
+.col-9>* {
+    width: 75%;
+}
+
+.col-10>* {
+    width: 83.33%;
+}
+
 .alert {
     color: var(--color-alert);
+}
+
+.blue {
+    color: var(--color-accent);
+}
+
+.green {
+    color: #77AC30;
+}
+
+.D95319 {
+    color: #D95319;
 }
 
 .ul { /* underline */
@@ -88,6 +128,36 @@ p.ref-item {
     margin: 1rem 0;
 }
 
-.remark-slide-content.no-change {
+.no-change,
+.remark-slide-content.no-change>* {
     opacity: .5;
+}
+
+.remark-slide-content.no-change {
+    opacity: 1;
+}
+
+.no-linebreak {
+    display: inline-block;
+}
+
+.font-7 {
+    font-size: .7em;
+}
+
+.dl {
+    border-radius: 3px;
+    background: #eeeeee;
+    margin-top: 0;
+    margin-bottom: .6em;
+}
+
+.dl>p,
+.dl>h2 {
+    padding: 0 3px;
+}
+
+.margin-bottom-0,
+.margin-bottom-0>p {
+    margin-bottom: 0;
 }

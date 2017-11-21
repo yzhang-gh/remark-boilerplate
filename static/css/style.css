@@ -32,6 +32,14 @@ img {
     /* TODO: */
 }
 
+.remark-container {
+    background: #525659;
+}
+
+.remark-slide-scaler {
+    box-shadow: 0 0 15px #141619;
+}
+
 .remark-slide-content>table:not(:first-child) {
     border-collapse: collapse;
     border-top: 2px solid var(--color-default);

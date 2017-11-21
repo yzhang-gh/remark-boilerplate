@@ -18,6 +18,8 @@ Sometimes `_` (subscript in LaTeX) will be wrongly parsed as `_italic_` block, j
 
 KaTeX supports `aligned` environment
 
+[tbd] manually align (using spacing)
+
 ## Tips
 
 Use vscode decoration to highlight slide separator `---`

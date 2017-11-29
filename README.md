@@ -10,6 +10,8 @@ Remark template with Beamer style.
 
 `.math[]`
 
+<https://khan.github.io/KaTeX/function-support.html>
+
 ### Underscore
 
 Sometimes `_` (subscript in LaTeX) will be wrongly parsed as `_italic_` block, just wrap your equation with `<p>` or `<div>`
@@ -22,4 +24,12 @@ KaTeX supports `aligned` environment
 
 ## Tips
 
-Use vscode decoration to highlight slide separator `---`
+Extension 'vscode-remark'
+
+Local CSS:
+
+```
+class: local-id
+
+<style>.local ...</style>
+```

@@ -1,4 +1,4 @@
-Remark template with Beamer style.
+[Remark](https://github.com/gnab/remark) template with Beamer style.
 
 ## Additions on Remark
 
@@ -20,7 +20,7 @@ Sometimes `_` (subscript in LaTeX) will be wrongly parsed as `_italic_` block, j
 
 KaTeX supports `aligned` environment
 
-[tbd] manually align (using spacing)
+<!-- [tbd] manually align (using spacing) -->
 
 ## Tips
 

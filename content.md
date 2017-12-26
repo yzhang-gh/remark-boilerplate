@@ -5,7 +5,7 @@ count: false
 
 ## Subtitle (optional)
 
-Author
+.author[Author]
 
 .date[Date]
 

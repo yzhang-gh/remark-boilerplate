@@ -2,9 +2,17 @@
 
 ## Additions on Remark
 
-- CSS classes `titlepage`, `date`, `no-number`, `math`
+- CSS classes
 - Support reference. `\cite{ref-item-id}`, `@{ref-item-id}{author}{title}{publisher}{year}`
 - Support math via KaTeX
+
+### CSS Classes
+
+structure: `titlepage`, `date`, `no-number`, `math`, `appendix`, `caption`
+
+color: `alert`, `accent`, `green`, `red`
+
+layout: `col-n`
 
 ## Deal with Math
 

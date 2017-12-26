@@ -1,6 +1,6 @@
 body {
     color: var(--color-default);
-    font-family: 'CMU Sans Serif', 'Microsoft Yahei';
+    font-family: 'CMU Sans Serif', 'Microsoft Yahei', 'Segoe UI Emoji';
 }
 
 p {
@@ -142,6 +142,7 @@ p+ol {
     margin-top: -.2rem;
 }
 
+
 /* Frame content margin */
 
 .remark-slide-content {
@@ -191,5 +192,8 @@ p+ol {
         transform: scale(1) !important;
         top: 0 !important;
         left: 0 !important;
+    }
+    .remark-slide-scaler {
+        box-shadow: none;
     }
 }

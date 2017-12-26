@@ -92,16 +92,32 @@ p.ref-item {
     width: 83.33%;
 }
 
+.col-11>* {
+    width: 91.66%;
+}
+
+.col-12>* {
+    width: 100%;
+}
+
 .alert {
     color: var(--color-alert);
 }
 
-.blue {
+.accent {
     color: var(--color-accent);
 }
 
 .green {
     color: #77AC30;
+}
+
+.red {
+    color: #D82020;
+}
+
+.appendix.remark-slide-content {
+    background: repeating-linear-gradient(-45deg, #f0f0f0, #f0f0f0 10px, #f5f5f5 10px, #f5f5f5 20px);
 }
 
 .ul {
@@ -111,12 +127,6 @@ p.ref-item {
 
 .opacity06 {
     opacity: .6;
-}
-
-.opacity06,
-.opacity06 * {
-    color: var(--color-default);
-    border-color: var(--color-default);
 }
 
 .divider {
@@ -157,6 +167,9 @@ p.ref-item {
     padding: 0 3px;
 }
 
+.caption {
+    font-size: .7em;
+}
 
 /* Not good */
 

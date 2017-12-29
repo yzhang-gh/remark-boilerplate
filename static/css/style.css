@@ -142,6 +142,9 @@ p+ol {
     margin-top: -.2rem;
 }
 
+ul ul {
+    margin-bottom: 0;
+}
 
 /* Frame content margin */
 

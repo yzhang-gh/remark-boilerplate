@@ -14,6 +14,10 @@ color: `alert`, `accent`, `green`, `red`
 
 layout: `col-n`
 
+### Layout
+
+Bulma
+
 ## Deal with Math
 
 `.math[]`

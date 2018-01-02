@@ -1,6 +1,9 @@
 :root {
     --color-default: #384452;
     --color-default-lighter: #707883;
+    /* Blue */
     --color-accent: #088ACB;
+    /* Purple */
+    /* --color-accent: #3D5CCC; */
     --color-alert: #D95319;
 }

@@ -1,4 +1,6 @@
-`git diff` with origin remark repo
+# Remark
+
+`git diff` with origin Remark repo
 
 ```
 index e5a08ad..5ab5241 100644
@@ -37,3 +39,17 @@ index e5a08ad..5ab5241 100644
    };
  }
 ```
+
+# Bulma
+
+Only want `columns` layout
+
+`bulma-columns.sass`
+
+```sass
+@import "utilities/_all"
+@import "base/generic"
+@import "grid/columns"
+```
+
+`sass bulma-columns.sass bulma-columns.min.css --style compressed`

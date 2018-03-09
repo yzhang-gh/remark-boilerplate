@@ -3,7 +3,14 @@
     --color-default-lighter: #707883;
     /* Blue */
     --color-accent: #088ACB;
-    /* Purple */
-    /* --color-accent: #3D5CCC; */
+    /* Purple #3D5CCC */
     --color-alert: #D95319;
+    /* ----- Useful color pattern ----- */
+    /* Too dark */
+    /* Red #c82829 */
+    /* Orange #f5871f */
+    /* Yellow #eab700 */
+    /* Green #718c00 */
+    /* Blue #4271ae */
+    /* Purple #8959a8 */
 }

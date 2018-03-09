@@ -55,6 +55,7 @@ table thead {
 table th,
 table td {
     padding: 0 .5em .1em .5em;
+    vertical-align: middle;
 }
 
 table thead tr:first-child th,

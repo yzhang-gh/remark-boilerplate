@@ -60,6 +60,14 @@ p.ref-item {
     width: 25%;
 }
 
+.col-1>* {
+    width: 8.33%;
+}
+
+.col-2>* {
+    width: 16.66%;
+}
+
 .col-3>* {
     width: 25%;
 }
@@ -152,7 +160,6 @@ p.ref-item {
     font-size: .7em;
 }
 
-
 /* Need a good class name */
 
 .dl {
@@ -176,4 +183,13 @@ p.ref-item {
 .margin-bottom-0,
 .margin-bottom-0>p {
     margin-bottom: 0;
+}
+
+.mono {
+    font-family: Consolas;
+}
+
+.box {
+    border: 1px solid var(--color-alert);
+    margin: -1px;
 }

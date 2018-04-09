@@ -80,7 +80,9 @@ function renderReference(source) {
 loadFromUrl('content.md', source => {
     source = renderReference(source);
     document.getElementById('source').innerHTML = source;
-    let slideshow = remark.create();
+    let slideshow = remark.create({
+        highlightStyle: 'solarized-light'
+    });
 });
 
 /* Render math */

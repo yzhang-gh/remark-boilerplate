@@ -29,7 +29,7 @@ a {
 
 img {
     max-height: 350px;
-    /* TODO: */
+    /* TODO bad code */
 }
 
 .remark-container {
@@ -77,9 +77,21 @@ table tbody tr:first-child td {
 }
 
 pre {
-    background: #d9d9d9;
+    color: #657b83;
+    background: #f0f0f0;
     border-radius: 3px;
     padding: .5rem;
+}
+
+.remark-slide-content pre code.hljs {
+    padding: 0;
+    color: #657b83;
+    background: #f0f0f0;
+}
+
+code {
+    color: #657b83;
+    background: #f0f0f0;
 }
 
 .remark-code,

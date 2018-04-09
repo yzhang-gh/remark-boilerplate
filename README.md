@@ -12,7 +12,7 @@ structure: `titlepage`, `date`, `no-number`, `math`, `appendix`, `caption`
 
 color: `alert`, `accent`, `green`, `red`
 
-layout: `col-n`
+~~layout: `col-n`~~ (use Bulma instead)
 
 ### Layout
 

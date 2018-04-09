@@ -11,6 +11,12 @@ count: false
 
 ---
 
+# Remark Basics
+
+...
+
+---
+
 # Titlepage
 
 ```markdown
@@ -44,36 +50,21 @@ class: subtitle
 
 ---
 
-# Default Syntax
+# Classes
 
 ## Text
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+```
+normal .accent[accent] .alert[alert] .green[green] .red[red]
+```
 
-## List
-
-- Lorem ipsum dolor sit amet
-- Consectetur adipiscing elit
-
----
-
-# Text alignment
-
-.left[Left-aligned text]
-
-.center[Centered text]
-
-.right[Right-aligned text]
+normal .accent[accent] .alert[alert] .green[green] .red[red]
 
 ---
 
-# Incremental Slides
+# Using HTML
 
-- bullet 1
-
---
-
-- bullet 2
+Sometimes, Markdown syntax is limited. Then we have to write raw HTML to achieve more complex layout.
 
 ---
 

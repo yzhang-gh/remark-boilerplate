@@ -139,11 +139,18 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ---
 
-# Reference
+# References
 
-See `content.md` (links only work after printed to PDF)
+<pre><code>&#92;cite{id}
+
+...
+
+&#64;{id}{author}{title}{publisher}{year}
+</code></pre>
 
 \cite{id}
+
+Generated links only work in the printed PDF
 
 ---
 

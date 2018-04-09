@@ -94,6 +94,7 @@ code {
     background: #f0f0f0;
 }
 
+pre>code,
 .remark-code,
 .remark-inline-code {
     font-family: 'CMU Typewriter Text';

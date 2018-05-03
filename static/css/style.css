@@ -160,6 +160,36 @@ ul ul {
     margin-bottom: 0;
 }
 
+/* Bibliography */
+
+p.ref-item {
+    padding-left: 1em;
+    text-indent: -1em;
+    font-size: .8em;
+}
+
+.cite-item a {
+    opacity: .5;
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-default);
+}
+
+.cite-item {
+    white-space: nowrap;
+    font-size: .8em;
+}
+
+/* Math color */
+
+.katex {
+    font-size: 1em;
+    color: var(--color-math);
+}
+
+.katex .accent {
+    color: var(--color-math);
+}
+
 /* Frame content margin */
 
 .remark-slide-content {

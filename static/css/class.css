@@ -23,28 +23,6 @@ span.subtitle {
     font-size: .8em;
 }
 
-p.ref-item {
-    padding-left: 1em;
-    text-indent: -1em;
-    font-size: .8em;
-}
-
-.cite-item a {
-    opacity: .5;
-    text-decoration: none;
-    border-bottom: 1px solid var(--color-default);
-}
-
-.cite-item {
-    white-space: nowrap;
-    font-size: .8em;
-}
-
-.katex {
-    font-size: 1em;
-    color: var(--color-math);
-}
-
 .alert {
     color: var(--color-alert);
 }

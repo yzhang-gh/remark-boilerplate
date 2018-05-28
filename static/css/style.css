@@ -32,6 +32,13 @@ img {
     /* TODO bad code */
 }
 
+blockquote {
+    color: #888;
+    padding: 0 .5em;
+    border-left: 2px solid #888;
+    font-style: italic;
+}
+
 .remark-container {
     background: #525659;
 }
@@ -54,13 +61,38 @@ table thead {
 
 table th,
 table td {
-    padding: 0 .5em .1em .5em;
+    padding: 0 .5em .1em;
     vertical-align: middle;
 }
 
 table thead tr:first-child th,
 table tbody tr:first-child td {
     padding-top: .1em;
+}
+
+table.layout {
+    width: 100%;
+}
+
+table.layout,
+table.layout thead {
+    border: none!important;
+}
+
+table.layout th,
+table.layout td {
+    padding: .2em .5em;
+    text-align: center;
+}
+
+table.layout thead tr:first-child th,
+table.layout tbody tr:first-child td {
+    padding-top: .2em;
+}
+
+table.layout th p,
+table.layout td p {
+    margin: 0;
 }
 
 .remark-slide-content h1 {

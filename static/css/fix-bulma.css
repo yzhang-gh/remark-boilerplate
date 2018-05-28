@@ -1,3 +1,7 @@
 body {
     line-height: unset;
 }
+
+.columns {
+    margin-top: 0;
+}

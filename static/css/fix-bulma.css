@@ -2,6 +2,10 @@ body {
     line-height: unset;
 }
 
+hr {
+    margin: 1rem 0;
+}
+
 .columns {
     margin-top: 0;
 }

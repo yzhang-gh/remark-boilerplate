@@ -18,6 +18,8 @@ color: `alert`, `accent`, `green`, `red`
 
 Bulma
 
+`table.layout`
+
 ## Deal with Math
 
 `.math[]`

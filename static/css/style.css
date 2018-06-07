@@ -47,7 +47,7 @@ blockquote {
     box-shadow: 0 0 15px #141619;
 }
 
-.remark-slide-content>table:not(:first-child) {
+table {
     border-collapse: collapse;
     border-top: 2px solid var(--color-default);
     border-bottom: 2px solid var(--color-default);
@@ -71,7 +71,7 @@ table tbody tr:first-child td {
 }
 
 table.layout {
-    width: 100%;
+    margin: 0 1rem 1rem;
 }
 
 table.layout,

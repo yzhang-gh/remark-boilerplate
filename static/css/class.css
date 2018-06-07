@@ -75,6 +75,10 @@ span.subtitle {
     font-size: .7em;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 /* Need good classes names */
 
 .dl {
@@ -104,7 +108,7 @@ span.subtitle {
     font-family: Consolas;
 }
 
-.box {
+.box-alert {
     border: 1px solid var(--color-alert);
     margin: -1px;
 }

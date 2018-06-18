@@ -97,9 +97,9 @@ setTimeout(function () {
         // `&` in `<p>` will be escaped
         math = math.replace(/&amp;/g, '&');
         if ((element.className + element.parentNode.className).indexOf('block') !== -1) {
-            katex.render(math, element, { displayMode: true });
+            katex.render(math, element, { displayMode: true, colorIsTextColor: true });
         } else {
-            katex.render(math, element);
+            katex.render(math, element, { colorIsTextColor: true });
         }
     }
 }, 500);

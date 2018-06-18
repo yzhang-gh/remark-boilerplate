@@ -1,17 +1,18 @@
 body {
     color: var(--color-default);
-    font-family: 'CMU Sans Serif', 'Microsoft Yahei', 'Segoe UI Emoji';
+    font-family: 'CMU Sans Serif', 'Source Han Sans CN', 'Microsoft Yahei', 'Segoe UI Emoji';
 }
 
 p {
     line-height: 1.3;
+    margin-top: 0;
+    margin-bottom: .6em;
 }
 
-p,
 ul,
 ol {
     margin-top: 0;
-    margin-bottom: .6em;
+    margin-bottom: .8em;
 }
 
 h1,
@@ -233,6 +234,10 @@ p.ref-item {
     margin-right: 1rem;
 }
 
+.remark-slide-content>:nth-last-child(2) {
+    /* This rule assumes the last child node is <div class="remark-slide-number"></div> */
+    margin-bottom: 0;
+}
 
 /* Make preview size = print size */
 

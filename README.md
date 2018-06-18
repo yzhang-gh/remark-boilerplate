@@ -12,8 +12,6 @@ structure: `titlepage`, `date`, `no-number`, `math`, `appendix`, `caption`
 
 color: `alert`, `accent`, `green`, `red`
 
-~~layout: `col-n`~~ (use Bulma instead)
-
 ### Layout
 
 Bulma
@@ -26,15 +24,9 @@ Bulma
 
 <https://khan.github.io/KaTeX/function-support.html>
 
-### Underscore
+### Underscore Conflicts
 
 Sometimes `_` (subscript in LaTeX) will be wrongly parsed as `_italic_` block, just wrap your equation with `<p>` or `<div>`
-
-### Multi-line Equation
-
-KaTeX supports `aligned` environment
-
-<!-- [tbd] manually align (using spacing) -->
 
 ## Tips
 
@@ -45,5 +37,5 @@ Local CSS:
 ```
 class: local-id
 
-<style>.local ...</style>
+<style>.local-id {...}</style>
 ```

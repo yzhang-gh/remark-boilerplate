@@ -1,0 +1,19 @@
+{
+    "name": "remark-boilerplate",
+    "version": "0.1.0",
+    "description": "[Remark](https://github.com/gnab/remark) template with Beamer style.",
+    "main": "none",
+    "dependencies": {},
+    "devDependencies": {
+        "bibtex": "^0.9.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/neilsustc/remark-boilerplate.git"
+    },
+    "author": "Yu Zhang",
+    "license": "MIT"
+}

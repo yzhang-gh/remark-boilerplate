@@ -132,22 +132,10 @@ Sometimes, Markdown syntax is limited. Then we have to write raw HTML to achieve
 
 # References
 
-<pre><code>&#92;cite{id}
+Support `bibtex`
 
-...
-
-&#64;{id}{author}{title}{publisher}{year}
-</code></pre>
+<pre><code>&#92;cite{id}</code></pre>
 
 \cite{id}
 
 Generated links only work in the printed PDF
-
----
-
-class: no-number
-count: false
-
-# References
-
-@{id}{author}{title}{publisher}{year}

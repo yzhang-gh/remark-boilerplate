@@ -53,3 +53,9 @@ Only want `columns` layout
 ```
 
 `sass bulma-columns.sass bulma-columns.min.css --style compressed`
+
+# BibTeX
+
+https://github.com/digitalheir/bibtex-js
+
+`browserify src/main.js -o static/js/main.js`

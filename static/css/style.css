@@ -195,9 +195,11 @@ ul ul {
 
 /* Bibliography */
 
-p.ref-item {
-    padding-left: 1em;
-    text-indent: -1em;
+.remark-slide-content>p.ref-item:not(:first-child) {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 32px;
+    text-indent: -31px;
     font-size: .8em;
 }
 

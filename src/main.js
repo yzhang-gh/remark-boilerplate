@@ -75,26 +75,32 @@ function renderReference(source, entries) {
     });
 
     let count = 0;
+    // In case there are unused bibliographies
+    let offset = 0;
     /* Render bibliography */
     Object.keys(entries).forEach((key, i) => {
         const entry = entries[key];
         if (entry.cited) {
             count++;
             if (count === 1) {
-                source += '\n\n---\n\nclass: no-number\ncount: false\n\n# References\n\n';
-            } else if (count === 9) {
+                source += '\n\n---\n\nlayout: false\nclass: no-number\ncount: false\n\n# References\n\n';
+            } else if (count === 8) {
                 count = 0;
             }
 
+            const num = i + 1 - offset;
             source += [
                 `<p id="${key}" class="ref-item">`,
-                `<span${i > 8 ? '' : ' class="ref-num-padding"'}>[${i + 1}]</span>`,
+                `<span${num > 9 ? '' : ' class="ref-num-padding"'}>[${num}]</span>`,
                 `${allAuthors(entry)}.`,
                 `<span style="border-bottom: 1px solid var(--color-default);">${bibtexjs.normalizeFieldValue(entry.getField('title'))}</span>.`,
                 `<em>${renderVenue(entry)}</em>.`,
                 `${bibtexjs.normalizeFieldValue(entry.getField('year'))}.`,
                 '</p>'
             ].join(' ');
+        } else {
+            offset++;
+            console.warn('unused bibliography.', key);
         }
     });
 

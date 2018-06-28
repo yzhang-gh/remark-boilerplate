@@ -212,6 +212,12 @@ p.ref-item {
     font-size: .8em;
 }
 
+.ref-num-padding::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+}
+
 /* Math color */
 
 .katex {

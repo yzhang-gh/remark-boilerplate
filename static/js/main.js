@@ -78,17 +78,11 @@ function renderReference(source, entries) {
         return '<span class="cite-item" style="color: red;">(\\citation not found)</span>';
     });
 
-    console.log(entries);
-
     let count = 0;
     /* Render bibliography */
-    for (const key in entries) {
-        if (entries.hasOwnProperty(key)) {
-            const entry = entries[key];
-            if (!entry.cited) {
-                continue;
-            }
-
+    Object.keys(entries).forEach((key, i) => {
+        const entry = entries[key];
+        if (entry.cited) {
             count++;
             if (count === 1) {
                 source += '\n\n---\n\nclass: no-number\ncount: false\n\n# References\n\n';
@@ -96,9 +90,17 @@ function renderReference(source, entries) {
                 count = 0;
             }
 
-            source += `<p id="${key}" class="ref-item">${allAuthors(entry)}. <span style="border-bottom: 1px solid var(--color-default);">${bibtexjs.normalizeFieldValue(entry.getField('title'))}</span>. <em>${renderVenue(entry)}</em>. ${bibtexjs.normalizeFieldValue(entry.getField('year'))}.</p>`;
+            source += [
+                `<p id="${key}" class="ref-item">`,
+                `<span${i > 8 ? '' : ' class="ref-num-padding"'}>[${i + 1}]</span>`,
+                `${allAuthors(entry)}.`,
+                `<span style="border-bottom: 1px solid var(--color-default);">${bibtexjs.normalizeFieldValue(entry.getField('title'))}</span>.`,
+                `<em>${renderVenue(entry)}</em>.`,
+                `${bibtexjs.normalizeFieldValue(entry.getField('year'))}.`,
+                '</p>'
+            ].join(' ');
         }
-    }
+    });
 
     return source;
 }

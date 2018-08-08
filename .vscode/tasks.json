@@ -11,6 +11,16 @@
                 "kind": "build",
                 "isDefault": true,
             },
+            "problemMatcher": {
+                "fileLocation": "absolute",
+                "pattern": {
+                    "regexp": "^Error: [\\w ]*? ([C-K]:[\\w\\.\\-\\\\]*): ([\\w ]*?) \\((\\d+):(\\d+)\\)$",
+                    "file": 1,
+                    "line": 3,
+                    "column": 4,
+                    "message": 2
+                }
+            },
             "presentation": {
                 "echo": true,
                 "reveal": "never"

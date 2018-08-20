@@ -141,7 +141,7 @@ ul {
     list-style: none;
 }
 
-ul li:before {
+ul>li:before {
     content: "";
     border-color: transparent var(--color-accent);
     border-style: solid;
@@ -154,7 +154,7 @@ ul li:before {
     position: relative;
 }
 
-ul li {
+ul>li {
     margin-top: -0.2em;
 }
 
@@ -172,7 +172,7 @@ ol {
     counter-reset: li;
 }
 
-ol li::before {
+ol>li::before {
     content: counter(li) ".";
     color: var(--color-accent);
     display: inline-block;
@@ -180,16 +180,22 @@ ol li::before {
     margin-left: -1.3em;
 }
 
-ol li {
+ol>li {
     counter-increment: li;
     line-height: 1.5;
+    margin: .2rem 0;
 }
 
 p+ol {
     margin-top: -.2rem;
 }
 
-ul ul {
+ol ul {
+    margin-bottom: .2rem;
+}
+
+ul ul,
+ul ol {
     margin-bottom: 0;
 }
 

@@ -39,6 +39,10 @@ span.subtitle {
     color: #D82020;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .appendix.remark-slide-content {
     background: repeating-linear-gradient(-45deg, #f0f0f0, #f0f0f0 10px, #f5f5f5 10px, #f5f5f5 20px);
 }
@@ -48,7 +52,11 @@ span.subtitle {
     border-bottom: 1px solid var(--color-default);
 }
 
-.opacity06 {
+.opacity-03 {
+    opacity: .3;
+}
+
+.opacity-06 {
     opacity: .6;
 }
 
@@ -71,8 +79,12 @@ span.subtitle {
     display: inline-block;
 }
 
-.font-7 {
+.font-07 {
     font-size: .7em;
+}
+
+.font-08 {
+    font-size: .8em;
 }
 
 .hidden {
@@ -99,13 +111,12 @@ span.subtitle {
 
 /* Not good */
 
-.margin-bottom-0,
-.margin-bottom-0>p {
-    margin-bottom: 0;
-}
-
 .mono {
     font-family: Consolas;
+}
+
+.mono-cmu {
+    font-family: 'CMU Typewriter Text';
 }
 
 .box-alert {

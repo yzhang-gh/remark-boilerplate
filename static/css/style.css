@@ -253,6 +253,11 @@ ul ol {
     margin-bottom: 0;
 }
 
+.remark-slide-content>:nth-last-child(2):not(ul) p:last-child {
+    /* This rule assumes the last child node is <div class="remark-slide-number"></div> */
+    margin-bottom: 0;
+}
+
 /* Make preview size = print size */
 
 .remark-slide-scaler {

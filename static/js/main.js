@@ -66,7 +66,10 @@ function allAuthors(entry) {
 }
 
 function renderVenue(entry) {
-    return bibtexjs.normalizeFieldValue(entry.getField('journal'));
+    return bibtexjs.normalizeFieldValue(
+        entry.getField('journal')
+        || entry.getField('booktitle')
+    );
 }
 
 function renderReference(source, entries) {

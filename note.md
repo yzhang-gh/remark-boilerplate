@@ -2,7 +2,7 @@
 
 `git diff` with origin Remark repo
 
-```
+```diff
 index e5a08ad..5ab5241 100644
 --- a/src/remark/scaler.js
 +++ b/src/remark/scaler.js
@@ -58,4 +58,4 @@ Only want `columns` layout
 
 https://github.com/digitalheir/bibtex-js
 
-`browserify src/main.js -o static/js/main.js`
+`npx browserify src/main.js -o static/js/main.js`

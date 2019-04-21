@@ -83,34 +83,29 @@ function renderReference(source, entries) {
         return '<span class="cite-item" style="color: red;">(\\citation not found)</span>';
     });
 
-    let count = 0;
-    // In case there are unused bibliographies
-    let offset = 0;
     /* Render bibliography */
-    Object.keys(entries).forEach((key, i) => {
+    let count = 0;
+    let keys = Object.keys(entries).filter(key => entries[key].cited);
+    keys.sort((k1, k2) => allAuthors(entries[k1]).charCodeAt(0) - allAuthors(entries[k2]).charCodeAt(0));
+    keys.forEach((key, i) => {
         const entry = entries[key];
-        if (entry.cited) {
-            count++;
-            if (count === 1) {
-                source += '\n\n---\n\nlayout: false\nclass: no-number\ncount: false\n\n# References\n\n';
-            } else if (count === 8) {
-                count = 0;
-            }
-
-            const num = i + 1 - offset;
-            source += [
-                `<p id="${key}" class="ref-item">`,
-                `<span${num > 9 ? '' : ' class="ref-num-padding"'}>[${num}]</span>`,
-                `${allAuthors(entry)}.`,
-                `<span style="border-bottom: 1px solid var(--color-default);">${bibtexjs.normalizeFieldValue(entry.getField('title'))}</span>.`,
-                `<em>${renderVenue(entry)}</em>.`,
-                `${bibtexjs.normalizeFieldValue(entry.getField('year'))}.`,
-                '</p>'
-            ].join(' ');
-        } else {
-            offset++;
-            console.warn('unused bibliography.', key);
+        count++;
+        if (count === 1) {
+            source += '\n\n---\n\nlayout: false\nclass: no-number\ncount: false\n\n# References\n\n';
+        } else if (count === 8) {
+            count = 0;
         }
+
+        const num = i + 1;
+        source += [
+            `<p id="${key}" class="ref-item">`,
+            `<span${num > 9 ? '' : ' class="ref-num-padding"'}>[${num}]</span>`,
+            `${allAuthors(entry)}.`,
+            `<span style="border-bottom: 1px solid var(--color-default);">${bibtexjs.normalizeFieldValue(entry.getField('title'))}</span>.`,
+            `<em>${renderVenue(entry)}</em>.`,
+            `${bibtexjs.normalizeFieldValue(entry.getField('year'))}.`,
+            '</p>'
+        ].join(' ');
     });
 
     return source;

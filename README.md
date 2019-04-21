@@ -22,6 +22,12 @@ Bulma
 
 `.math[]`
 
+```html
+<div class="math block">
+...
+</div>
+```
+
 <https://khan.github.io/KaTeX/function-support.html>
 
 ### Underscore Conflicts

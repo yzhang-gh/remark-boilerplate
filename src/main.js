@@ -113,9 +113,14 @@ function renderReference(source, entries) {
 
 loadFromUrl('content.md', source => {
     loadFromUrl('ref.bib', bib => {
+        source = source.replace(/n't/g, 'n’t');
+        // TODO “”
+        // test case '<span class="cls" style="...">foo "bar"</span>'
+
         let bibEntries = bibtexjs.parseBibFile(bib).entries$;
         source = renderReference(source, bibEntries);
         document.getElementById('source').innerHTML = source;
+
         remark.create({ highlightStyle: 'solarized-light' });
     });
 });

@@ -90,9 +90,7 @@ function renderReference(source, entries) {
     /* Render bibliography */
     let count = 0;
     let keys = Object.keys(entries).filter(key => entries[key].cited);
-    console.log('keys', keys);
     keys.sort((k1, k2) => allAuthors(entries[k1]).charCodeAt(0) - allAuthors(entries[k2]).charCodeAt(0));
-    console.log('keys', keys);
     keys.forEach((key, i) => {
         const entry = entries[key];
         count++;
@@ -119,9 +117,14 @@ function renderReference(source, entries) {
 
 loadFromUrl('content.md', source => {
     loadFromUrl('ref.bib', bib => {
+        source = source.replace(/n't/g, 'n’t');
+        // TODO “”
+        // test case '<span class="cls" style="...">foo "bar"</span>'
+
         let bibEntries = bibtexjs.parseBibFile(bib).entries$;
         source = renderReference(source, bibEntries);
         document.getElementById('source').innerHTML = source;
+
         remark.create({ highlightStyle: 'solarized-light' });
     });
 });

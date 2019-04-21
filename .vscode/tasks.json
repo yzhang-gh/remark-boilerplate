@@ -6,7 +6,7 @@
         {
             "label": "browserify bibtexjs",
             "type": "shell",
-            "command": "browserify src/main.js -o static/js/main.js",
+            "command": "npx browserify src/main.js -o static/js/main.js",
             "group": {
                 "kind": "build",
                 "isDefault": true,

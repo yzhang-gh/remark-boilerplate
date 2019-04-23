@@ -58,8 +58,8 @@ function allAuthors(entry) {
             .concat(author.jrs).join(" ")
     );
 
-    if (authors.length > 5) {
-        return [authors[0], authors[1], '...', authors[authors.length - 1]].join(', ');
+    if (authors.length > 4) {
+        return [authors[0], authors[1], '…', authors[authors.length - 1]].join(', ');
     } else {
         return authors.join(', ');
     }

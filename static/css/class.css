@@ -91,7 +91,37 @@ span.subtitle {
     visibility: hidden;
 }
 
-/* Need good classes names */
+/* Box (has padding) */
+
+div.box {
+    border: 1px solid var(--color-default);
+    padding: .5em 1em;
+    margin-bottom: .6em;
+}
+
+div.box>p:last-child {
+    margin-bottom: 0;
+}
+
+/* Border-[colour] */
+
+.border-default {
+    border: 1px solid var(--color-default);
+    margin: -1px;
+}
+
+p.border-default {
+    margin-bottom: calc(.6em - 1px);
+}
+
+.border-alert {
+    border: 1px solid var(--color-alert);
+    margin: -1px;
+}
+
+/* ┌─────────────────────────┐
+   │ Need good classes names │
+   └─────────────────────────┘ */
 
 .dl {
     border-radius: 3px;
@@ -109,7 +139,9 @@ span.subtitle {
     font-size: .7em;
 }
 
-/* Not good */
+/* ┌──────────┐
+   │ Not good │
+   └──────────┘ */
 
 .mono {
     font-family: Consolas;
@@ -117,9 +149,4 @@ span.subtitle {
 
 .mono-cmu {
     font-family: 'CMU Typewriter Text';
-}
-
-.box-alert {
-    border: 1px solid var(--color-alert);
-    margin: -1px;
 }

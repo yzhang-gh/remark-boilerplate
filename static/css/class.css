@@ -13,14 +13,14 @@
     font-size: 16px;
 }
 
-.remark-slide-content.subtitle>h1:first-child+p {
+.remark-slide-content.subtitle > h1:first-child + p {
     margin-top: -0.9em;
     margin-left: 1px;
 }
 
 span.subtitle {
     color: var(--color-accent);
-    font-size: .8em;
+    font-size: 0.8em;
 }
 
 .alert {
@@ -32,11 +32,11 @@ span.subtitle {
 }
 
 .green {
-    color: #77AC30;
+    color: #77ac30;
 }
 
 .red {
-    color: #D82020;
+    color: #d82020;
 }
 
 .bold {
@@ -44,7 +44,13 @@ span.subtitle {
 }
 
 .appendix.remark-slide-content {
-    background: repeating-linear-gradient(-45deg, #f0f0f0, #f0f0f0 10px, #f5f5f5 10px, #f5f5f5 20px);
+    background: repeating-linear-gradient(
+        -45deg,
+        #f0f0f0,
+        #f0f0f0 10px,
+        #f5f5f5 10px,
+        #f5f5f5 20px
+    );
 }
 
 .ul {
@@ -53,22 +59,22 @@ span.subtitle {
 }
 
 .opacity-03 {
-    opacity: .3;
+    opacity: 0.3;
 }
 
 .opacity-06 {
-    opacity: .6;
+    opacity: 0.6;
 }
 
 .divider {
-    border-top: 1px solid rgba(34, 36, 38, .3);
+    border-top: 1px solid rgba(34, 36, 38, 0.3);
     display: block;
     margin: 1rem 0;
 }
 
 .no-change,
-.remark-slide-content.no-change>* {
-    opacity: .5;
+.remark-slide-content.no-change > * {
+    opacity: 0.5;
 }
 
 .remark-slide-content.no-change {
@@ -80,11 +86,11 @@ span.subtitle {
 }
 
 .font-07 {
-    font-size: .7em;
+    font-size: 0.7em;
 }
 
 .font-08 {
-    font-size: .8em;
+    font-size: 0.8em;
 }
 
 .hidden {
@@ -95,11 +101,11 @@ span.subtitle {
 
 div.box {
     border: 1px solid var(--color-default);
-    padding: .5em 1em;
-    margin-bottom: .6em;
+    padding: 0.5em 1em;
+    margin-bottom: 0.6em;
 }
 
-div.box>p:last-child {
+div.box > p:last-child {
     margin-bottom: 0;
 }
 
@@ -111,7 +117,7 @@ div.box>p:last-child {
 }
 
 p.border-default {
-    margin-bottom: calc(.6em - 1px);
+    margin-bottom: calc(0.6em - 1px);
 }
 
 .border-alert {
@@ -127,16 +133,16 @@ p.border-default {
     border-radius: 3px;
     background: #eeeeee;
     margin-top: 0;
-    margin-bottom: .6em;
+    margin-bottom: 0.6em;
 }
 
-.dl>p,
-.dl>h2 {
+.dl > p,
+.dl > h2 {
     padding: 0 3px;
 }
 
 .caption {
-    font-size: .7em;
+    font-size: 0.7em;
 }
 
 /* ┌──────────┐
@@ -148,5 +154,5 @@ p.border-default {
 }
 
 .mono-cmu {
-    font-family: 'CMU Typewriter Text';
+    font-family: "CMU Typewriter Text";
 }

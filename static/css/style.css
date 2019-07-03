@@ -1,18 +1,19 @@
 body {
     color: var(--color-default);
-    font-family: 'CMU Sans Serif', 'Source Han Sans CN', 'Microsoft Yahei', 'Segoe UI Emoji';
+    font-family: "CMU Sans Serif", "Source Han Sans CN", "Microsoft Yahei",
+        "Segoe UI Emoji";
 }
 
 p {
     line-height: 1.3;
     margin-top: 0;
-    margin-bottom: .6em;
+    margin-bottom: 0.6em;
 }
 
 ul,
 ol {
     margin-top: 0;
-    margin-bottom: .8em;
+    margin-bottom: 0.8em;
 }
 
 h1,
@@ -21,7 +22,7 @@ h3 {
     color: var(--color-accent);
     font-weight: normal;
     margin-top: 0;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 }
 
 a {
@@ -35,7 +36,7 @@ img {
 
 blockquote {
     color: #888;
-    padding: 0 .5em;
+    padding: 0 0.5em;
     border-left: 2px solid #888;
     font-style: italic;
 }
@@ -62,13 +63,13 @@ table thead {
 
 table th,
 table td {
-    padding: 0 .5em .1em;
+    padding: 0 0.5em 0.1em;
     vertical-align: middle;
 }
 
 table thead tr:first-child th,
 table tbody tr:first-child td {
-    padding-top: .1em;
+    padding-top: 0.1em;
 }
 
 table.layout {
@@ -77,18 +78,18 @@ table.layout {
 
 table.layout,
 table.layout thead {
-    border: none!important;
+    border: none !important;
 }
 
 table.layout th,
 table.layout td {
-    padding: .2em .5em;
+    padding: 0.2em 0.5em;
     text-align: center;
 }
 
 table.layout thead tr:first-child th,
 table.layout tbody tr:first-child td {
-    padding-top: .2em;
+    padding-top: 0.2em;
 }
 
 table.layout th p,
@@ -105,15 +106,15 @@ table.layout td p {
     font-size: 1em;
 }
 
-.remark-slide-content>h1 {
-    margin-bottom: .6rem;
+.remark-slide-content > h1 {
+    margin-bottom: 0.6rem;
 }
 
 pre {
     color: #657b83;
     background: #f0f0f0;
     border-radius: 3px;
-    padding: .5rem;
+    padding: 0.5rem;
 }
 
 .remark-slide-content pre code.hljs {
@@ -127,13 +128,12 @@ code {
     background: #f0f0f0;
 }
 
-pre>code,
+pre > code,
 .remark-code,
 .remark-inline-code {
-    font-family: 'CMU Typewriter Text';
-    font-size: .9em;
+    font-family: "CMU Typewriter Text";
+    font-size: 0.9em;
 }
-
 
 /* List style */
 
@@ -141,7 +141,7 @@ ul {
     list-style: none;
 }
 
-ul>li:before {
+ul > li:before {
     content: "";
     border-color: transparent var(--color-accent);
     border-style: solid;
@@ -154,13 +154,13 @@ ul>li:before {
     position: relative;
 }
 
-ul>li {
+ul > li {
     margin-top: -0.2em;
 }
 
-p+ul {
+p + ul {
     /* Because of custom list style */
-    margin-top: -.5rem;
+    margin-top: -0.5rem;
 }
 
 li p {
@@ -172,7 +172,7 @@ ol {
     counter-reset: li;
 }
 
-ol>li::before {
+ol > li::before {
     content: counter(li) ".";
     color: var(--color-accent);
     display: inline-block;
@@ -180,18 +180,18 @@ ol>li::before {
     margin-left: -1.3em;
 }
 
-ol>li {
+ol > li {
     counter-increment: li;
     line-height: 1.5;
-    margin: .2rem 0;
+    margin: 0.2rem 0;
 }
 
-p+ol {
-    margin-top: -.2rem;
+p + ol {
+    margin-top: -0.2rem;
 }
 
 ol ul {
-    margin-bottom: .2rem;
+    margin-bottom: 0.2rem;
 }
 
 ul ul,
@@ -201,27 +201,27 @@ ul ol {
 
 /* Bibliography */
 
-.remark-slide-content>p.ref-item:not(:first-child) {
+.remark-slide-content > p.ref-item:not(:first-child) {
     margin-left: 0;
     margin-right: 0;
     padding-left: 32px;
     text-indent: -31px;
-    font-size: .8em;
+    font-size: 0.8em;
 }
 
 .cite-item a {
-    opacity: .5;
+    opacity: 0.5;
     text-decoration: none;
     border-bottom: 1px solid var(--color-default);
 }
 
 .cite-item {
     white-space: nowrap;
-    font-size: .8em;
+    font-size: 0.8em;
 }
 
 .ref-num-padding::before {
-    content: '';
+    content: "";
     display: inline-block;
     width: 8px;
 }
@@ -243,17 +243,17 @@ ul ol {
     padding: 0.8em 1em;
 }
 
-.remark-slide-content>:not(:first-child) {
+.remark-slide-content > :not(:first-child) {
     margin-left: 1rem;
     margin-right: 1rem;
 }
 
-.remark-slide-content>:nth-last-child(2) {
+.remark-slide-content > :nth-last-child(2) {
     /* This rule assumes the last child node is <div class="remark-slide-number"></div> */
     margin-bottom: 0;
 }
 
-.remark-slide-content>:nth-last-child(2):not(ul) p:last-child {
+.remark-slide-content > :nth-last-child(2):not(ul) p:last-child {
     /* This rule assumes the last child node is <div class="remark-slide-number"></div> */
     margin-bottom: 0;
 }
@@ -261,10 +261,9 @@ ul ol {
 /* Make preview size = print size */
 
 .remark-slide-scaler {
-    width: 672px!important;
-    height: 504px!important;
+    width: 672px !important;
+    height: 504px !important;
 }
-
 
 /* Page number */
 
@@ -272,14 +271,13 @@ ul ol {
     font-size: 0.5em;
 }
 
-.remark-slide-content>.remark-slide-number {
+.remark-slide-content > .remark-slide-number {
     margin: 0;
 }
 
 .no-number .remark-slide-number {
     display: none;
 }
-
 
 /* Print */
 

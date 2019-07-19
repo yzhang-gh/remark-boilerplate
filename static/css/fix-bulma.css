@@ -9,3 +9,7 @@ hr {
 .columns {
     margin-top: 0;
 }
+
+.columns.is-gapless:not(:last-child) {
+    margin-bottom: 0;
+}

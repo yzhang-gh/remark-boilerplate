@@ -30,8 +30,8 @@ a {
 }
 
 img {
-    max-height: 350px;
-    /* TODO bad code */
+    max-height: 411px;
+    max-width: 599px;
 }
 
 blockquote {

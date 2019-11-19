@@ -1,6 +1,6 @@
 [Remark](https://github.com/gnab/remark) template with Beamer style.
 
-## Additions on Remark
+## Additions to Remark
 
 - CSS classes
 - Support reference. `\cite{ref-item-id}`, `@{ref-item-id}{author}{title}{publisher}{year}`

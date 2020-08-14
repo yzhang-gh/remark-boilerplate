@@ -113,9 +113,10 @@ function renderReference(source, entries) {
 
 loadFromUrl('content.md', source => {
     loadFromUrl('ref.bib', bib => {
-        source = source.replace(/n't/g, 'n’t');
-        // TODO “”
-        // test case '<span class="cls" style="...">foo "bar"</span>'
+        //// Quotation marks
+        source = source.replace(/n't/g, 'n’t')
+            .replace(/`([^'\r\n])'/g, (_, p1) => '‘' + p1 + '’')
+            .replace(/``([^'\r\n])''/g, (_, p1) => '“' + p1 + '”');
 
         let bibEntries = bibtexjs.parseBibFile(bib).entries$;
         source = renderReference(source, bibEntries);

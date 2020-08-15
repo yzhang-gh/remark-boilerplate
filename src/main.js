@@ -115,8 +115,8 @@ loadFromUrl('content.md', source => {
     loadFromUrl('ref.bib', bib => {
         //// Quotation marks
         source = source.replace(/n't/g, 'n’t')
-            .replace(/`([^'\r\n])'/g, (_, p1) => '‘' + p1 + '’')
-            .replace(/``([^'\r\n])''/g, (_, p1) => '“' + p1 + '”');
+            .replace(/``([^\r\n]*?)''/g, (_, p1) => '“' + p1 + '”')
+            .replace(/`([^'\r\n]*?)'/g, (_, p1) => '‘' + p1 + '’');
 
         let bibEntries = bibtexjs.parseBibFile(bib).entries$;
         source = renderReference(source, bibEntries);

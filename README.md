@@ -3,7 +3,7 @@
 ## Additions to Remark
 
 - CSS classes
-- Support reference. `\cite{ref-item-id}`, `@{ref-item-id}{author}{title}{publisher}{year}`
+- Support bibtex. `\cite{ref-item-id}`, `@{ref-item-id}{author}{title}{publisher}{year}`
 - Support math via KaTeX
 
 ### CSS Classes

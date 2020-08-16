@@ -115,9 +115,19 @@ loadFromUrl('content.md', source => {
     loadFromUrl('ref.bib', bib => {
         //// Quotation marks
         source = source.replace(/n't/g, 'n’t')
-            .replace(/``([^\r\n]*?)''/g, (_, p1) => '“' + p1 + '”')
-            .replace(/`([^'\r\n]*?)'/g, (_, p1) => '‘' + p1 + '’');
+            .replace(/``([^\r\n]*?)''/g, (_, p1) => `“${p1}”`)
+            .replace(/`([^'\r\n]*?)'/g, (_, p1) => `‘${p1}’`);
 
+        //// \date
+        const dateObj = new Date();
+        const year = dateObj.getFullYear();
+        const month = dateObj.getMonth() + 1;
+        const date = dateObj.getDate();
+        const monthNames = ['Jan', 'Feb', 'March', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        source = source.replace('\\cnDate', `${year}.${month}.${date}`)
+            .replace('\\enDate', `${monthNames[month - 1]} ${date}, ${year}`);
+
+        //// References
         let bibEntries = bibtexjs.parseBibFile(bib).entries$;
         source = renderReference(source, bibEntries);
         document.getElementById('source').innerHTML = source;

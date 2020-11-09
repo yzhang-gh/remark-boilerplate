@@ -85,12 +85,14 @@ span.subtitle {
     display: inline-block;
 }
 
-.font-07 {
+.font-07 p {
     font-size: 0.7em;
+    line-height: 1.5;
 }
 
-.font-08 {
+.font-08 p {
     font-size: 0.8em;
+    line-height: 1.5;
 }
 
 .hidden {

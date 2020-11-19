@@ -130,6 +130,12 @@ Sometimes, Markdown syntax is limited. Then we have to write raw HTML to achieve
 
 ---
 
+## Upper Right Corner
+
+<span class="alert" style="position: absolute; top: 22px; right: 36px; font-weight: bold;">Wow</span>
+
+---
+
 # References
 
 Support `bibtex`

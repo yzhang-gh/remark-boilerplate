@@ -2,6 +2,10 @@
 
 `git diff` with origin Remark repo
 
+`src/remark/scaler.js` 中的 `referenceWidth/Height` 用来 scale 页面与字体的相对大小，相当于缩放字体
+
+页面的大小、长宽比可以在 `style.css` 中 `.remark-slide-scaler` 和 `@page size` 直接覆盖
+
 ```diff
 index e5a08ad..5ab5241 100644
 --- a/src/remark/scaler.js

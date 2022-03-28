@@ -6,6 +6,12 @@
 
 页面的大小、长宽比可以在 `style.css` 中 `.remark-slide-scaler` 和 `@page size` 直接覆盖
 
+想要在浏览器中居中预览的话，还需在 `remark.create()` 时传入正确的长宽比，如
+
+```js
+remark.create({ratio: '16:9'})
+```
+
 ```diff
 index e5a08ad..5ab5241 100644
 --- a/src/remark/scaler.js
